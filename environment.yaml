@@ -1,0 +1,35 @@
+name: phagemorph
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+
+  # Core scientific stack
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+
+  # Image processing
+  - pillow
+  - opencv
+
+  # Deep learning (CPU version)
+  - pytorch
+  - torchvision
+
+  # Jupyter
+  - jupyterlab
+  - notebook
+
+  # Optional but useful
+  - tqdm
+  - seaborn
+
+  # Pip-only installs (if needed)
+  - pip:
+      - scikit-image
